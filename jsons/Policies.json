@@ -1,4 +1,5 @@
 [
+//Ancient Era
   {
 //smacks other cities with a heafty penalty, but bulks up your capital.
 //Also buffs you up when fighting defensively.
@@ -130,32 +131,130 @@
                  ]
   },
   {
+//Designed to encourage founding more cities. If only we had a way to cut unhappiness from that!
     "name": "Expansionism",
     "era": "Ancient era",
     "priorities": {
                    "Neutral": 0,
-                   "Cultural": 10,
+                   "Cultural": 15,
                    "Diplomatic": 0,
                    "Domination": 10,
-                   "Scientific": 0
+                   "Scientific": 5
                    },
     "uniques": [
-                "[+3 Culture] [in capital]",
-                "[-25]% Culture cost of natural border growth [in all cities]"
+                "[+1 Culture] [in all cities]",
+                "[-25]% Culture cost of natural border growth [in all cities]",
+                "Each city founded increases culture cost of policies [-10]% less than normal"
+                "Only available <before adopting [Isolationism]>",
+                "Only available <before adopting [Balance]>"
                ],
     "policies": [
                 {
-                 "name": "Aristocracy",
+                 "name": "Manifest Destiny",
                  "uniques": [
-                             "[+15]% Production when constructing [All] wonders [in all cities]",
-                             "[+1 Happiness] per [10] population [in all cities]"
+                             "[+15]% Production when constructing [Settler] units [in all cities]",
+                             "[Gold] cost of purchasing [Settler] units [-33]%",
+                             "Each city founded increases culture cost of policies [-15]% less than normal"
                             ],
                  "row": 1,
+                 "column": 4
+                 },
+                {
+                 "name": "Wanderlust",
+                 "uniques": [
+                             "[+1] Movement <for [All] units> <in tiles without [Enemy Land]>",
+                            ],
+                 "row": 1,
+                 "column": 7
+                 },
+                {
+                 "name": "New Dominion",
+                 "uniques": [
+                             "[-25]% Gold cost of acquiring tiles [in all cities]",
+                             "[-25]% Gold cost of acquiring tiles [in all cities] <on foreign continents>",
+                             "[-10]% tile improvement construction time",
+                             "[-10]% tile improvement construction time <on foreign continents>'
+                            ],
+                 "requires": ["Manifest Destiny"],
+                 "row": 1,
                  "column": 1
+                 },
+                {
+                 "name": "Prospecting",
+                 "uniques": [
+                             "Quantity of strategic resources produced by the empire +[+25]%",
+                             "[+1 Culture, +2 Production] from every [Strategic resource]"
+                            ],
+                 "requires": ["Manifest Destiny"],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "Colonial Spirit",
+                 "uniques": [
+                             "Free [Settler] appears <upon discovering [Optics]>",
+                             "[2] free [Settler] units appear <during a Golden Age>",
+                             "[+2 Happiness] from each Trade Route",
+                             "[+30]% Production when constructing [Happiness] buildings [in all cities]",
+                             "Each city founded increases culture cost of policies [-15]% less than normal"
+                            ],
+                 "requires": ["Manifest Destiny"],
+                 "row": 3,
+                 "column": 6
+                 },
+                {
+                 "name": "Wealth of the New World",
+                 "uniques": [
+                             "[+1 Gold, +1 Production] from every [Gold Ore] <on foreign continents>",
+                             "[+1 Gold, +1 Production] from every [Silver] <on foreign continents>",
+                             "[+1 Gold, +1 Production] from every [Gems] <on foreign continents>",
+                             "[+1 Happiness, +1 Culture] from every [Luxury resource] <on foreign continents>"
+                            ],
+                 "requires": ["Prospecting","New Dominion"],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "Gold Rush",
+                 "uniques": [
+                             "[+2 Gold, +3 Culture] [in all cities] <on foreign continents> <during a Golden Age>",
+                             "[+1 Gold] from all [Gold] buildings <on foreign continents> <during a Golden Age>",
+                             "[+5 Gold, +2 Culture] from each Trade Route <during a Golden Age>",
+                             "Empire enters golden age"
+                            ],
+                 "requires": ["Prospecting","Colonial Spirit"],
+                 "row": 5,
+                 "column": 3
+                 },
+                {
+                 "name": "The Sun Never Sets",
+                 "uniques": [
+                             "[+1 Gold, +1 Science, +1 Culture] per [5] population [in all cities] <on foreign continents>",
+                             "[+3 Happiness] [in all cities] <on foreign continents>",
+                             "[+1 Gold, +1 Culture] from every [Harbor] <during a Golden Age>",
+                             "[+2 Gold, +2 Culture] from every [Seaport] <during a Golden Age>",
+                             "[+20]% [Gold] <during a Golden Age>",
+                             "[+15]% [Science] <during a Golden Age>",
+                             "Empire enters golden age"
+                            ],
+                 "requires": ["Colonial Spirit"],
+                 "row": 5,
+                 "column": 5
+                 },
+                {
+                 "name": "",//this is going to be doing a bunch of stuff for your military as you fill out the other bits of the tree
+                 "uniques": [
+                             "[relativeAmount]% Strength for cities
+                             "
+                            ],
+                 "row": 8,
+                 "column": 2
                  },
                  ]
   },
   {
+//A more middle road, generalist path.
+//Kinda all over the place with what it gives you, but that's deliberate.
     "name": "Balance",
     "era": "Ancient era",
     "priorities": {
@@ -181,4 +280,135 @@
                  },
                  ]
    },
+
+//All Eras
+//These are the BEEG BOIS, which have more narrow focus than the other types
+//More like the vanilla ones, though obviously there's some amount of mashing things together.
+  {
+//We're recycling a few of the vanilla names here.
+//This is Military stuff; At War production boosts, free Promotions, extra EXP, Great Generals, etc.
+    "name": "Honor",
+    "era": "Ancient era",
+    "priorities": {
+                   "Neutral": 0,
+                   "Cultural": 0,
+                   "Diplomatic": 0,
+                   "Domination": 0,
+                   "Scientific": 0
+                   },
+    "uniques": [
+                "[+3 Culture] [in capital]",
+                "[-25]% Culture cost of natural border growth [in all cities]"
+               ],
+    "policies": [
+                {
+                 "name": "Aristocracy",
+                 "uniques": [
+                             "[+15]% Production when constructing [All] wonders [in all cities]",
+                             "[+1 Happiness] per [10] population [in all cities]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                 ]
+   },
+  {
+//Buuuut, the actual *effects* are... Substantially different, let's say.
+//This one has some basic boosts, and culminates in Great Person stuff.
+    "name": "Tradition",
+    "era": "Ancient era",
+    "priorities": {
+                   "Neutral": 0,
+                   "Cultural": 0,
+                   "Diplomatic": 0,
+                   "Domination": 0,
+                   "Scientific": 0
+                   },
+    "uniques": [
+                "[+3 Culture] [in capital]",
+                "[-25]% Culture cost of natural border growth [in all cities]"
+               ],
+    "policies": [
+                {
+                 "name": "Aristocracy",
+                 "uniques": [
+                             "[+15]% Production when constructing [All] wonders [in all cities]",
+                             "[+1 Happiness] per [10] population [in all cities]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                 ]
+   },
+  {
+//They're longer, for starters,
+//Econ things. Gold, resourses, trade routes.
+    "name": "Commerce",
+    "era": "Ancient era",
+    "priorities": {
+                   "Neutral": 0,
+                   "Cultural": 0,
+                   "Diplomatic": 0,
+                   "Domination": 0,
+                   "Scientific": 0
+                   },
+    "uniques": [
+                "[+3 Culture] [in capital]",
+                "[-25]% Culture cost of natural border growth [in all cities]"
+               ],
+    "policies": [
+                {
+                 "name": "Aristocracy",
+                 "uniques": [
+                             "[+15]% Production when constructing [All] wonders [in all cities]",
+                             "[+1 Happiness] per [10] population [in all cities]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                 ]
+   },
+  {
+//And have some era restrictions 
+//ALL the City-state stuff! Also things like getting stuff from Friendship/etc.
+    "name": "Diplomacy",
+    "era": "Ancient era",
+    "priorities": {
+                   "Neutral": 0,
+                   "Cultural": 0,
+                   "Diplomatic": 0,
+                   "Domination": 0,
+                   "Scientific": 0
+                   },
+    "uniques": [
+                "[+3 Culture] [in capital]",
+                "[-25]% Culture cost of natural border growth [in all cities]"
+               ],
+    "policies": [
+                {
+                 "name": "Aristocracy",
+                 "uniques": [
+                             "[+15]% Production when constructing [All] wonders [in all cities]",
+                             "[+1 Happiness] per [10] population [in all cities]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                 ]
+   },
+
+//Classical Era
+Piety/Rationalism, but without the former being utterly pants.
+
+//Renaissance Era
+Smaller general stat boosts vs stronger conditional ones.
+
+//Industrial Era 
+Exploitation vs Conservation. Former is good for gold, production, etc, latter is good for faith/culture strats
+
+//Modern Era
+Freedom vs Oppression. Former is good for a bunch of stuff, latter buffs military.
+
+//Future Era
+Only one here; Futurism, which adds some neat little boosters.
 ]
