@@ -356,10 +356,10 @@
                  "name": "Military Caste",
                  "uniques": [
                              "[+10]% Production when constructing [Military] units [in all cities]",
-                             "[+1 Culture] from every [Walls]",
-                             "[+1 Gold, +1 Production] from every [Castle]",
-                             "[+1 Production] from every [Arsenal]",
-                             "[+1 Production, +1 Culture] from every [Military Base]"
+                             "[+1 Culture, +1 Happiness] from every [Walls]",
+                             "[+1 Production, +1 Culture, +1 Happiness] from every [Castle]",
+                             "[+1 Production, +1 Happiness] from every [Arsenal]",
+                             "[+2 Production, +2 Culture, +1 Happiness] from every [Military Base]"
                             ],
                  "requires": ["Discipline"],
                  "row": 3,
@@ -369,10 +369,14 @@
                  "name": "Professional Army",
                  "uniques": [
                              "[-33]% Gold cost of upgrading <for [Military] units>",
-                             "[+1 Happiness] from every [Walls]",
-                             "[+1 Happiness] from every [Castle]",
-                             "[+1 Happiness] from every [Arsenal]",
-                             "[+1 Happiness] from every [Military Base]"
+                             "All newly-trained [relevant] units [in all cities] receive the [Drill I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Drill II] promotion <in cities with a [Alhambra]>",
+                             "All newly-trained [relevant] units [in all cities] receive the [Shock I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Accuracy I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Barrage I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Boarding Party I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Targeting I] promotion",
+                             "All newly-trained [relevant] units [in all cities] receive the [Bombardment I] promotion"
                             ],
                  "requires": ["Military Caste"],
                  "row": 4,
