@@ -142,7 +142,7 @@
                    "Scientific": 5
                    },
     "uniques": [
-                "[+1 Culture] [in all cities]",
+                "[+1 Happiness] per [5] population [in all cities]",
                 "[-25]% Culture cost of natural border growth [in all cities]",
                 "Each city founded increases culture cost of policies [-10]% less than normal"
                 "Only available <before adopting [Isolationism]>",
@@ -265,15 +265,15 @@
                    "Scientific": 5
                    },
     "uniques": [
-                "[+3 Culture] [in capital]",
-                "[-25]% Culture cost of natural border growth [in all cities]"
+                "[+1 Culture] [in all cities]",
+                ""
                ],
     "policies": [
                 {
-                 "name": "Aristocracy",
+                 "name": "",
                  "uniques": [
-                             "[+15]% Production when constructing [All] wonders [in all cities]",
-                             "[+1 Happiness] per [10] population [in all cities]"
+                             "",
+                             ""
                             ],
                  "row": 1,
                  "column": 1
@@ -290,26 +290,231 @@
     "name": "Honor",
     "era": "Ancient era",
     "priorities": {
-                   "Neutral": 0,
-                   "Cultural": 0,
-                   "Diplomatic": 0,
-                   "Domination": 0,
-                   "Scientific": 0
+                   "Neutral": 10,
+                   "Cultural": 10,
+                   "Diplomatic": 5,
+                   "Domination": 15,
+                   "Scientific": 5
                    },
     "uniques": [
-                "[+3 Culture] [in capital]",
-                "[-25]% Culture cost of natural border growth [in all cities]"
+                "Earn [25]% of killed [Melee] unit's [Strength] as [Culture]",
+                "[+15]% Strength <when attacking>",
+                "[+20]% Strength <when defending>"
                ],
     "policies": [
                 {
-                 "name": "Aristocracy",
+                 "name": "Savages",
                  "uniques": [
-                             "[+15]% Production when constructing [All] wonders [in all cities]",
-                             "[+1 Happiness] per [10] population [in all cities]"
+                             "[+33]% Strength <vs [Barbarian] units>",
+                             "Earn [100]% of killed [Barbarian] unit's [Strength] as [Culture]",
                             ],
                  "row": 1,
                  "column": 1
                  },
+                {
+                 "name": "Patrols",
+                 "uniques": [
+                             "Enemy [Barbarian] units must spend [+1] extra movement points when inside your territory",
+                             "Notified of new Barbarian encampments"
+                            ],
+                 "requires": ["Savages"],
+                 "row": 1,
+                 "column": 3
+                 },
+                {
+                 "name": "Might",
+                 "uniques": [
+                             "When conquering an encampment, earn [+25] Gold and recruit a Barbarian unit <with [+10]% chance>",
+                             "When defeating a [Barbarian] unit, earn [+10] Gold and recruit it <with [+10]% chance>"
+                            ],
+                 "requires": ["Patrols"],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "Warrior Code",
+                 "uniques": [
+                             "[+10]% Production when constructing [Military] units [in all cities]",
+                             "[+25]% XP gained from combat <for [Military] units>"
+                            ],
+                 "row": 1,
+                 "column": 6
+                 },
+                {
+                 "name": "Discipline",
+                 "uniques": [
+                             "[+10]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>"
+                             "[+10]% Strength <for [Ranged] units> <when adjacent to a [Ranged] unit>"
+                             "[+10]% Strength <for [Melee] units> <when adjacent to a [Ranged] unit>"
+                             "[+10]% Strength <for [Ranged] units> <when adjacent to a [Melee] unit>"
+                            ],
+                 "requires": ["Warrior Code"],
+                 "row": 2,
+                 "column": 7
+                 },
+                {
+                 "name": "Military Caste",
+                 "uniques": [
+                             "[+10]% Production when constructing [Military] units [in all cities]",
+                             "[+1 Culture] from every [Walls]",
+                             "[+1 Gold, +1 Production] from every [Castle]",
+                             "[+1 Production] from every [Arsenal]",
+                             "[+1 Production, +1 Culture] from every [Military Base]"
+                            ],
+                 "requires": ["Discipline"],
+                 "row": 3,
+                 "column": 6
+                 },
+                {
+                 "name": "Professional Army",
+                 "uniques": [
+                             "[-33]% Gold cost of upgrading <for [Military] units>",
+                             "[+1 Happiness] from every [Walls]",
+                             "[+1 Happiness] from every [Castle]",
+                             "[+1 Happiness] from every [Arsenal]",
+                             "[+1 Happiness] from every [Military Base]"
+                            ],
+                 "requires": ["Military Caste"],
+                 "row": 4,
+                 "column": 5
+                 },
+                {
+                 "name": "Garrisons",
+                 "uniques": [
+                             "[+1 Happiness, +2 Culture] [in all cities with a garrison]",
+                             "Units in cities cost no Maintenance"
+                            ],
+                 "requires": ["Professional Army"],
+                 "row": 3,
+                 "column": 4
+                 },
+                {
+                 "name": "Military Logistics",
+                 "uniques": [
+                             "[+1] Unit Supply per [8] population [in all cities]",
+                             "[+2] Unit Supply per city"
+                            ],
+                 "requires": ["Professional Army"]
+                 "row": 4,
+                 "column": 7
+                 },
+                {
+                 "name": "Close Combat",
+                 "uniques": [
+                             "[+5]% Production when constructing [{Melee} {Land}] units [in all cities]",
+                             "[Gold] cost of purchasing [{Melee} {Land}] units [-15]%"
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "Martial Arts",
+                 "uniques": [
+                             "New [{Melee} {Land}] units start with [+5] Experience [in all cities]",
+                             "[Gold] cost of purchasing [{Melee} {Land}] units [-15]%"
+                            ],
+                 "requires": ["Close Combat"]
+                 "row": 7,
+                 "column": 1
+                 },
+                {
+                 "name": "Codified Combat System",
+                 "uniques": [
+                             "New [{Melee} {Land}] units start with [+10] Experience [in all cities]"
+                            ],
+                 "requires": ["Martial Arts"]
+                 "row": 9,
+                 "column": 1
+                 },
+                {
+                 "name": "Ranged Combat",
+                 "uniques": [
+                             "[+5]% Production when constructing [{Ranged} {Land}] units [in all cities]",
+                             "[Gold] cost of purchasing [{Ranged} {Land}] units [-15]%"
+                            ],
+                 "row": 5,
+                 "column": 3
+                 },
+                {
+                 "name": "Generational Training",
+                 "uniques": [
+                             "New [{Ranged} {Land}] units start with [+5] Experience [in all cities]",
+                             [Gold] cost of purchasing [{Ranged} {Land}] units [-15]%"
+                            ],
+                 "requires": ["Ranged Combat"]
+                 "row": 7,
+                 "column": 3
+                 },
+                {
+                 "name": "Range Certification",
+                 "uniques": [
+                             "New [{Ranged} {Land}] units start with [+10] Experience [in all cities]"
+                            ],
+                 "requires": ["Generational Training"]
+                 "row": 9,
+                 "column": 3
+                 },
+                {
+                 "name": "Professional Navy",
+                 "uniques": [
+                             "New [{Military} {Water}] units start with [+15] Experience [in all cities]",
+                             "[+15]% Production when constructing [{Military} {Water}] units [in all cities]",
+                             "[Gold] cost of purchasing [{Military} {Water}] units [-30]%",
+                             "Only available <after discovering [tech]>"
+                            ],
+                 "row": 6,
+                 "column": 5
+                 },
+                {
+                 "name": "Marines",
+                 "uniques": [
+                             "[+33]% Strength <for [{Melee} {Water}] units>"
+                            ],
+                 "requires": ["Professional Navy"]
+                 "row": 7,
+                 "column": 6
+                 },
+                {
+                 "name": "Naval Gunnery",
+                 "uniques": [
+                             "[+33]% Strength <for [{Ranged} {Water}] units>",
+                             "Only available <after discovering [tech]>"
+                            ],
+                 "requires": ["Professional Navy"]
+                 "row": 8,
+                 "column": 4
+                 },
+                {
+                 "name": "Air Power",
+                 "uniques": [
+                             "[+33]% Strength <for [Air] units>",
+                             "New [Air] units start with [+15] Experience [in all cities]",
+                             "[+15]% Production when constructing [Air] units [in all cities]",
+                             "[Gold] cost of purchasing [Air] units [-30]%",
+                             "Only available <after discovering [tech]>"
+                            ],
+                 "row": 9,
+                 "column": 7
+                 },
+                {
+                 "name": "Shock and Awe",
+                 "uniques": [
+                             "[+1] additional attacks per turn <for [non-air] units>",
+                             "[+1] Movement <for [Military] units>",
+                             "[+33]% to Flank Attack bonuses",
+                             "[+30]% Strength <for [Melee] units> <when attacking>",
+                             "[+50]% Strength <for [Ranged] units> <when attacking>",
+                            ],
+                 "requires": ["Professional Navy", "Professional Army","Air Power","Range Certification","Codified Combat System"]
+                 "row": 11,
+                 "column": 4
+                 },
+                 {
+                  "name": "Honor Complete",
+                  "uniques": [
+                    "Earn [10]% of killed [Military] unit's [Cost] as [Gold]"
+                           ]
+                 }
                  ]
    },
   {
@@ -372,6 +577,33 @@
 //And have some era restrictions 
 //ALL the City-state stuff! Also things like getting stuff from Friendship/etc.
     "name": "Diplomacy",
+    "era": "Ancient era",
+    "priorities": {
+                   "Neutral": 0,
+                   "Cultural": 0,
+                   "Diplomatic": 0,
+                   "Domination": 0,
+                   "Scientific": 0
+                   },
+    "uniques": [
+                "[+3 Culture] [in capital]",
+                "[-25]% Culture cost of natural border growth [in all cities]"
+               ],
+    "policies": [
+                {
+                 "name": "Aristocracy",
+                 "uniques": [
+                             "[+15]% Production when constructing [All] wonders [in all cities]",
+                             "[+1 Happiness] per [10] population [in all cities]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                 ]
+   },
+  {
+//This one is kinda special in that it has to do with Great People specificly, culminating with being able to buy them.
+    "name": "Greatness",
     "era": "Ancient era",
     "priorities": {
                    "Neutral": 0,
