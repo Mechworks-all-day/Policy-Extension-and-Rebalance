@@ -931,76 +931,93 @@
                  "column": 1
                  },
                 {
-                 "name": "",//Boosts Improvements next to Great Improvement 
+                 "name": "Apprenticeships",//Boosts Improvements next to Great Improvement 
                  "uniques": [
-                             "[+1 Production] from every [Mine] <within [1] tiles of a [tileFilter]>"
+                             "[+1 Production] from every [Mine] <within [1] tiles of a [Manufactory]>",
+                             "[+1 Production] from every [Lumber mill] <within [1] tiles of a [Manufactory]>"
+                             "[+1 Production] from every [Polder] <within [1] tiles of a [Manufactory]> <after discovering [Economics]>",
+                             "[+1 Production] from every [Quarry] <within [1] tiles of a [Manufactory]> <after discovering [Chemistry]>"
                             ],
+                 "requires": ["Organized Labor"]
                  "row": 2,
                  "column": 1
                  },
                 {
-                 "name": "",//the same, but with a persentage 
+                 "name": "Assembly Lines",//the same, but with a persentage 
                  "uniques": [
-                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+20]% [Production] from every [Mine] <within [1] tiles of a [Manufactory]>",
+                             "[+20]% [Production] from every [Lumber mill] <within [1] tiles of a [Manufactory]>",
+                             "[+20]% [Production] from every [Polder] <within [1] tiles of a [Manufactory]> <after discovering [Economics]>",
+                             "[+20]% [Production] from every [Quarry] <within [1] tiles of a [Manufactory]> <after discovering [Chemistry]>"
                             ],
+                 "requires": ["Apprenticeships"]
                  "row": 3,
                  "column": 1
                  },
                 {
-                 "name": "",//boosts Great Improvement 
+                 "name": "Manufacturing",//boosts Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                             "[+2 Production] from every [Manufactory]",
+                             "[+50]% [Production] from every [Manufactory] <starting from the [Industrial Era]>"
                             ],
+                 "requires": ["Assembly Lines"]
                  "row": 4,
                  "column": 1
                  },
                 {
-                 "name": "",//boosts everything near a Great Improvement 
+                 "name": "Shipping",//boosts everything near a Great Improvement 
                  "uniques": [
-                             ""
+                             "[+1 Production] from [All] tiles [in all cities] <within [1] tiles of a [Manufactory]>"
                             ],
+                 "requires": ["Manufacturing"]
                  "row": 5,
                  "column": 1
                  },
                 {
-                 "name": "",//25% chance of getting a Great Person during a Golden Age
+//Taking suggestions on the name here, current one is a placeholder 
+                 "name": "Golden Engineering",//25% chance of getting a Great Person during a Golden Age
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                             "Free [Great Engineer] appears <with [+25]% chance> <during a Golden Age>"
                             ],
+                 "requires": ["Organized Labor"]
                  "row": 2,
                  "column": 2
                  },
                 {
-                 "name": "",//15% faster Great Person 
+                 "name": "Engineer's Guild",//15% faster Great Person 
                  "uniques": [
-                             "[greatPerson] is earned [+15]% faster"
+                             "[Great Engineer] is earned [+15]% faster"
                             ],
+                 "requires": ["Golden Engineering"]
                  "row": 3,
                  "column": 2
                  },
                 {
-                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "name": "Master Engineers",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
-                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                             "May buy [Great Engineer] units for [1000] [Faith] [in capital] <before the [Industrial Era]>",
+                             "[Great Engineer] is earned [+15]% faster <starting from the [Industrial Era]>"
                             ],
+                 "requires": ["Engineer's Guild"]
                  "row": 4,
                  "column": 2
                  },
                 {
-                 "name": "",//Great Person faith cost reduced
+                 "name": "Engineering Schools",//Great Person faith cost reduced
                  "uniques": [
-                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                             "[Faith] cost of purchasing [Great Engineer] units [-20]%"
                             ],
+                 "requires": ["Master Engineers"]
                  "row": 5,
                  "column": 2
                  },
                 {
-                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "name": "Engineering Colleges",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
-                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                             "May buy [Great Engineer] units for [1000] [Faith] [in all cities] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 Gold] whenever a Great Person is expended <for [1] turns>"
                             ],
+                 "requires": ["Engineering Schools"]
                  "row": 6,
                  "column": 1
                  },
@@ -1012,78 +1029,88 @@
                  "row": 1,
                  "column": 3
                  },
-              "name": "",//Boosts Improvements next to Great Improvement 
+              "name": "Luxury Goods",//Boosts Improvements next to Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+1 Culture] from every [Luxury resource] <within [3] tiles of a [Landmark]>"
                             ],
+                 "requires": ["Cultural Identity"]
                  "row": 2,
-                 "column": 1
+                 "column": 3
                  },
                 {
-                 "name": "",//the same, but with a persentage 
+                 "name": "Luxury Exports",//the same, but with a persentage 
                  "uniques": [
-                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+20]% [Culture] from every [Luxury resource] <within [3] tiles of a [Landmark]>"
                             ],
+                 "requires": ["Luxury Goods"]
                  "row": 3,
-                 "column": 1
+                 "column": 3
                  },
                 {
-                 "name": "",//boosts Great Improvement 
+                 "name": "Tourism",//boosts Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                             "[+2 Culture] from every [Landmark]",
+                             "[+5 Gold] from every [Landmark] <starting from the [Industrial era]>",
                             ],
+                 "requires": ["Luxury Exports"]
                  "row": 4,
-                 "column": 1
+                 "column": 3
                  },
                 {
-                 "name": "",//boosts everything near a Great Improvement 
+                 "name": "Sightseeing",//boosts everything near a Great Improvement 
                  "uniques": [
-                             ""
+                             "[+1 Culture] from [All] tiles [in all cities] <within [1] tiles of a [Landmark]>"
                             ],
+                 "requires": ["Tourism"]
                  "row": 5,
-                 "column": 1
+                 "column": 3
                  },
                 {
-                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "name": "Artistry",//25% chance of getting a Great Person during a Golden Age
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                             "Free [Great Artist] appears <with [+25]% chance> <during a Golden Age>"
                             ],
+                 "requires": ["Cultural Identity"]
                  "row": 2,
-                 "column": 2
+                 "column": 4
                  },
                 {
-                 "name": "",//15% faster Great Person 
+                 "name": "Celebrity",//15% faster Great Person 
                  "uniques": [
-                             "[greatPerson] is earned [+15]% faster"
+                             "[Great Artist] is earned [+15]% faster"
                             ],
+                 "requires": ["Artistry"]
                  "row": 3,
-                 "column": 2
+                 "column": 4
                  },
                 {
-                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "name": "Art Schools",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
-                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                             "May buy [Great Artist] units for [1000] [Faith] [in capital] <before the [Industrial Era]>",
+                             "[Great Artist] is earned [+15]% faster <starting from the [Industrial Era]>"
                             ],
+                 "requires": ["Celebrity"]
                  "row": 4,
-                 "column": 2
+                 "column": 4
                  },
                 {
-                 "name": "",//Great Person faith cost reduced
+                 "name": "Artistic Colleges",//Great Person faith cost reduced
                  "uniques": [
-                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                             "[Faith] cost of purchasing [Great Artist] units [-20]%"
                             ],
+                 "requires": ["Art Schools"]
                  "row": 5,
-                 "column": 2
+                 "column": 4
                  },
                 {
-                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "name": "Art Appriciation",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
-                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                             "May buy [Great Artist] units for [1000] [Faith] [in all cities] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 Culture] whenever a Great Person is expended <for [1] turns>"
                             ],
+                 "requires": ["Artistic Colleges"]
                  "row": 6,
-                 "column": 1
+                 "column": 3
                  },
                 {
                  "name": "Wise Men",//Great Scientist tree
@@ -1093,78 +1120,91 @@
                  "row": 1,
                  "column": 5
                  },
-              "name": "",//Boosts Improvements next to Great Improvement 
+              "name": "Journeyman Sages",//Boosts Improvements next to Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+1 Science] from every [Strategic resource] <within [3] tiles of a [Academy]>",
+                             "[+1 Science] from every [Bonus resource] <within [3] tiles of a [Academy]>",
                             ],
+                 "requires": ["Wise Men"]
                  "row": 2,
-                 "column": 1
+                 "column": 5
                  },
                 {
-                 "name": "",//the same, but with a persentage 
+                 "name": "Research Expeditions",//the same, but with a persentage 
                  "uniques": [
-                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+20]% [Science] from every [Strategic resource] <within [3] tiles of a [Academy]>",
+                             "[+20]% [Science] from every [Bonus resource] <within [3] tiles of a [Academy]>"
                             ],
+                 "requires": ["Journeyman Sages"]
                  "row": 3,
-                 "column": 1
+                 "column": 5
                  },
                 {
-                 "name": "",//boosts Great Improvement 
+                 "name": "Formal Education",//boosts Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                             "[+1 Science] from every [Academy]",
+                             "[+15]% [Science] from every [Academy] <after discovering [Scientific Theory]>",
+                             "[+15]% [Science] from every [Academy] <after discovering [Atomic Theory]>"
                             ],
+                 "requires": ["Research Expeditions"]
                  "row": 4,
-                 "column": 1
+                 "column": 5
                  },
                 {
-                 "name": "",//boosts everything near a Great Improvement 
+                 "name": "Satilite Campuses",//boosts everything near a Great Improvement 
                  "uniques": [
-                             ""
+                             "[+1 Science] from [All] tiles [in all cities] <within [1] tiles of a [Academy]>"
                             ],
+                 "requires": ["Formal Education"]
                  "row": 5,
-                 "column": 1
+                 "column": 5
                  },
                 {
-                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "name": "Inspiration",//25% chance of getting a Great Person during a Golden Age
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                             "Free [Great Scientist] appears <with [+25]% chance> <during a Golden Age>"
                             ],
+                 "requires": ["Wise Men"]
                  "row": 2,
-                 "column": 2
+                 "column": 6
                  },
                 {
-                 "name": "",//15% faster Great Person 
+                 "name": "Academic Accolades",//15% faster Great Person 
                  "uniques": [
-                             "[greatPerson] is earned [+15]% faster"
+                             "[Great Scientist] is earned [+15]% faster"
                             ],
+                 "requires": ["Inspiration"]
                  "row": 3,
-                 "column": 2
+                 "column": 6
                  },
                 {
-                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "name": "Doctorates",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
-                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                             "May buy [Great Scientist] units for [1000] [Faith] [in capital] <before the [Industrial Era]>",
+                             "[Great Scientist] is earned [+15]% faster <starting from the [Industrial Era]>"
                             ],
+                 "requires": ["Academic Accolades"]
                  "row": 4,
-                 "column": 2
+                 "column": 6
                  },
                 {
-                 "name": "",//Great Person faith cost reduced
+                 "name": "Post-Gratuate Studies",//Great Person faith cost reduced
                  "uniques": [
-                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                             "[Faith] cost of purchasing [Great Scientist] units [-20]%"
                             ],
+                 "requires": ["Doctorates"]
                  "row": 5,
-                 "column": 2
+                 "column": 6
                  },
                 {
-                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "name": "Universities",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
-                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                             "May buy [Great Scientist] units for [1000] [Faith] [in all cities] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 Science] whenever a Great Person is expended <for [1] turns>"
                             ],
+                 "requires": ["Post-Gratuate Studies"]
                  "row": 6,
-                 "column": 1
+                 "column": 5
                  },
                 {
                  "name": "Bartering",//Great Merchant tree
@@ -1174,78 +1214,87 @@
                  "row": 1,
                  "column": 7
                  },
-              "name": "",//Boosts Improvements next to Great Improvement 
+              "name": "Apprentice Traders",//Boosts Improvements next to Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+1 Gold] from every [Trading post] <within [2] tiles of a [Customs house]>"
                             ],
+                 "requires": ["Bartering"]
                  "row": 2,
-                 "column": 1
+                 "column": 7
                  },
                 {
-                 "name": "",//the same, but with a persentage 
+                 "name": "Trade Caravans",//the same, but with a persentage 
                  "uniques": [
-                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                             "[+20]% [Gold] from every [Trading post] <within [2] tiles of a [Customs house]>"
                             ],
+                 "requires": ["Apprentice Traders"]
                  "row": 3,
-                 "column": 1
+                 "column": 7
                  },
                 {
-                 "name": "",//boosts Great Improvement 
+                 "name": "Trade Guilds",//boosts Great Improvement 
                  "uniques": [
-                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                             "[+3 Gold] from every [Customs house]"
                             ],
+                 "requires": ["Trade Caravans"]
                  "row": 4,
-                 "column": 1
+                 "column": 7
                  },
                 {
-                 "name": "",//boosts everything near a Great Improvement 
+                 "name": "Merchantile Opportunism",//boosts everything near a Great Improvement 
                  "uniques": [
-                             ""
+                             "[+1 Gold] from [All] tiles [in all cities] <within [1] tiles of a [Customs house]>"
                             ],
+                 "requires": ["Trade Guilds"]
                  "row": 5,
-                 "column": 1
+                 "column": 7
                  },
                 {
-                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "name": "Entrepreneurs",//25% chance of getting a Great Person during a Golden Age
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                             "Free [Great Merchant] appears <with [+25]% chance> <during a Golden Age>"
                             ],
+                 "requires": ["Bartering"]
                  "row": 2,
-                 "column": 2
+                 "column": 8
                  },
                 {
-                 "name": "",//15% faster Great Person 
+                 "name": "Trade Schools",//15% faster Great Person 
                  "uniques": [
-                             "[greatPerson] is earned [+15]% faster"
+                             "[Great Merchant] is earned [+15]% faster"
                             ],
+                 "requires": ["Entrepreneurs"]
                  "row": 3,
-                 "column": 2
+                 "column": 8
                  },
                 {
-                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "name": "Master Traders",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
-                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                             "May buy [Great Merchant] units for [1000] [Faith] [in capital] <before the [Industrial Era]>",
+                             "[Great Merchant] is earned [+15]% faster <starting from the [Industrial Era]>"
                             ],
+                 "requires": ["Trade Schools"]
                  "row": 4,
-                 "column": 2
+                 "column": 8
                  },
                 {
-                 "name": "",//Great Person faith cost reduced
+                 "name": "Trade Unions",//Great Person faith cost reduced
                  "uniques": [
-                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                             "[Faith] cost of purchasing [Great Merchant] units [-20]%"
                             ],
+                 "requires": ["Master Traders"]
                  "row": 5,
-                 "column": 2
+                 "column": 8
                  },
                 {
-                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "name": "Economics Colleges",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
                  "uniques": [
-                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
-                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                             "May buy [Great Merchant] units for [1000] [Faith] [in all cities] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 Gold] whenever a Great Person is expended <for [1] turns>"
                             ],
+                 "requires": ["Trade Unions"]
                  "row": 6,
-                 "column": 1
+                 "column": 7
                  },
                 {
                  "name": "Training",//Great General tree
@@ -1256,8 +1305,59 @@
                  "column": 9
                  },
 //This one is a little different from the other 4 on account of how Citadels work and just the general "feel"
+[relativeAmount]% Production when constructing [baseUnitFilter] units [cityFilter]
+Free [baseUnitFilter] appears
+[amount] units cost no maintenance
+[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%
+May buy [baseUnitFilter] units for [amount] [stat] [cityFilter]
+May buy [baseUnitFilter] units for [amount] [stat] [cityFilter] at an increasing price ([amount])
+[relativeAmount]% City Strength from defensive buildings
+[relativeAmount]% Strength for cities
+New [baseUnitFilter] units start with [amount] Experience [cityFilter]
+All newly-trained [baseUnitFilter] units [cityFilter] receive the [promotion] promotion
+[amount] Unit Supply
+[relativeAmount]% Strength
+[amount] HP when healing
+Damage is ignored when determining unit Strength
+[relativeAmount]% XP gained from combat
+[greatPerson] is earned [relativeAmount]% faster
+<within [amount] tiles of a [tileFilter]>
+<when attacking>
+<when defending>
+<for [mapUnitFilter] units>
+<with [amount]% chance>
+<for [amount] turns>
+<when at war>
+<in cities with a [buildingFilter]>
+<when adjacent to a [mapUnitFilter] unit>
+                {
+                 "name": "",
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "",
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "",
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
                  ]
    },
+//You might notice a distinct lack of Great Prophets in here; that's because they're in Piety/Rationalism instead.
+
 
 //Classical Era
 Piety/Rationalism, but without the former being utterly pants.
