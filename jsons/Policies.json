@@ -607,6 +607,7 @@
                  "uniques": [
                              "Allied City-States provide [Gold] equal to [+10]% of what they produce for themselves"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 1
                  },
@@ -616,6 +617,7 @@
                              "Retain [+33]% of the happiness from a luxury after the last copy has been traded away",
                              "[+15]% Happiness from luxury resources gifted by City-States"
                             ],
+                 "requires": ["Basic Trade Agreement"]
                  "row": 3,
                  "column": 1
                  },
@@ -625,6 +627,7 @@
                              "[+10]% Gold from Great Merchant trade missions",
                              "Allied City-States provide [Gold] equal to [+20]% of what they produce for themselves"
                             ],
+                 "requires": ["Luxury Traders"]
                  "row": 4,
                  "column": 1
                  },
@@ -633,6 +636,7 @@
                  "uniques": [
                              "Allied City-States provide [Gold] equal to [+20]% of what they produce for themselves"
                             ],
+                 "requires": ["Free Trade"]
                  "row": 5,
                  "column": 1
                  },
@@ -641,6 +645,7 @@
                  "uniques": [
                              "Allied City-States provide [Science] equal to [+10]% of what they produce for themselves"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 2
                  },
@@ -650,6 +655,7 @@
                              "Allied City-States provide [Science] equal to [+15]% of what they produce for themselves",
                              "Science gained from research agreements [+15]%"
                             ],
+                 "requires": ["Simple Research Collaboration"]
                  "row": 3,
                  "column": 2
                  },
@@ -659,6 +665,7 @@
                              "[+20]% [Science] from City-States",
                              "Science gained from research agreements [+15]%"
                             ],
+                 "requires": ["Scientific Exchange"]
                  "row": 4,
                  "column": 2
                  },
@@ -668,6 +675,7 @@
                              "Science gained from research agreements [+15]%",
                              "Allied City-States provide [Science] equal to [+15]% of what they produce for themselves",
                             ],
+                 "requires": ["Free Exchange of Information"]
                  "row": 5,
                  "column": 2
                  },
@@ -677,6 +685,7 @@
                              "Science gained from research agreements [+15]%",
                              "Allied City-States provide [Science] equal to [+60]% of what they produce for themselves",
                             ],
+                 "requires": ["Collaborative Effort"]
                  "row": 6,
                  "column": 2
                  },
@@ -685,14 +694,16 @@
                  "uniques": [
                              "Allied City-States provide [Faith] equal to [+15]% of what they produce for themselves"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 3
                  },
                 {
-                 "name": "Tolerance",
+                 "name": "Religious Tolerance",
                  "uniques": [
                              "Allied City-States provide [Faith] equal to [+15]% of what they produce for themselves"
                             ],
+                 "requires": ["Inter-Faith Dialogue"]
                  "row": 3,
                  "column": 3
                  },
@@ -701,6 +712,7 @@
                  "uniques": [
                              "[+33]% [Faith] from City-States",
                             ],
+                 "requires": ["Religious Tolerance"]
                  "row": 4,
                  "column": 3
                  },
@@ -709,6 +721,7 @@
                  "uniques": [
                              "Allied City-States provide [Culture] equal to [+10]% of what they produce for themselves"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 5
                  },
@@ -717,6 +730,7 @@
                  "uniques": [
                              "Allied City-States provide [Culture] equal to [+15]% of what they produce for themselves"
                             ],
+                 "requires": ["Cultural Tolerance"]
                  "row": 3,
                  "column": 5
                  },
@@ -725,6 +739,7 @@
                  "uniques": [
                              "Allied City-States provide [Culture] equal to [+20]% of what they produce for themselves"
                             ],
+                 "requires": ["Cultural Exchange"]
                  "row": 4,
                  "column": 5
                  },
@@ -733,6 +748,7 @@
                  "uniques": [
                              "[+100]% [Culture] from City-States",
                             ],
+                 "requires": ["Cultural Fascination"]
                  "row": 5,
                  "column": 5
                  },
@@ -741,6 +757,7 @@
                  "uniques": [
                              "Allied City-States provide [Happiness] equal to [+10]% of what they produce for themselves"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 6
                  },
@@ -749,6 +766,7 @@
                  "uniques": [
                              "[+33]% [Happiness] from City-States",
                             ],
+                 "requires": ["Traveling Entertainment"]
                  "row": 3,
                  "column": 6
                  },
@@ -757,6 +775,7 @@
                  "uniques": [
                              "Allied City-States provide [Happiness] equal to [+30]% of what they produce for themselves"
                             ],
+                 "requires": ["Shared Holidays"]
                  "row": 4,
                  "column": 6
                  },
@@ -766,6 +785,7 @@
                              "Militaristic City-States grant units [+1] times as fast when you are at war with a common nation",
                              "Gain [+15] Influence with a [Military] gift to a City-State"
                             ],
+                 "requires": ["Patronage"]
                  "row": 2,
                  "column": 7
                  },
@@ -774,6 +794,7 @@
                  "uniques": [
                              "Military Units gifted from City-States start with [+10] XP"
                             ],
+                 "requires": ["Defense Pact"]
                  "row": 3,
                  "column": 7
                  },
@@ -783,6 +804,7 @@
                              "Militaristic City-States grant units [+1] times as fast when you are at war with a common nation",
                              "Gain [+5] Influence with a [Military] gift to a City-State"
                             ],
+                 "requires": ["Basic Training"]
                  "row": 4,
                  "column": 7
                  },
@@ -791,6 +813,7 @@
                  "uniques": [
                              "Military Units gifted from City-States start with [+20] XP"
                             ],
+                 "requires": ["Joint Excercise"]
                  "row": 5,
                  "column": 7
                  },
@@ -799,6 +822,7 @@
                  "uniques": [
                              "Military Units gifted from City-States start with [+30] XP"
                             ],
+                 "requires": ["Veteran Exchange"]
                  "row": 6,
                  "column": 7
                  },
@@ -815,24 +839,27 @@
                  "uniques": [
                              "Gifts of Gold to City-States generate [+25]% more Influence"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Influence"]
+                 "row": 2,
+                 "column": 9
                  },
                 {
                  "name": "Open Borders",
                  "uniques": [
                              "City-State territory always counts as friendly territory"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Bribery"]
+                 "row": 3,
+                 "column": 9
                  },
                 {
                  "name": "Educated Elite",
                  "uniques": [
                              "Allied City-States will occasionally gift Great People"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Open Borders"]
+                 "row": 4,
+                 "column": 9
                  },
                 {
                  "name": "Long Memory",
@@ -840,8 +867,9 @@
                              "Influence of all other civilizations with all city-states degrades [+10]% faster",
                              "Resting point for Influence with City-States is increased by [+10]"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Educated Elite"]
+                 "row": 5,
+                 "column": 9
                  },
                 {
                  "name": "Historical Allies",
@@ -849,16 +877,18 @@
                              "Resting point for Influence with City-States is increased by [+20]",
                              "[+50]% resources gifted by City-States"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Long Memory"]
+                 "row": 6,
+                 "column": 9
                  },
                 {
                  "name": "Annexation",
                  "uniques": [
-                             "Can spend Gold to annex or puppet a City-State that has been your ally for [30] turns."
+                             "Can spend Gold to annex or puppet a City-State that has been your ally for [50] turns."
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Historical Allies", "Elite Secondment", "Grand Celebrations","Cultural Celebration","Religious Freedom","Unified Academia","Shared Economy"]
+                 "row": 7,
+                 "column": 9
                  },
                 {
                  "name": "Diplomacy Complete",
@@ -876,6 +906,8 @@
    },
   {
 //This one is kinda special in that it has to do with Great People specificly, culminating with being able to buy them.
+
+<in [tileFilter] tiles>
     "name": "Greatness",
     "era": "Ancient era",
     "priorities": {
@@ -886,19 +918,344 @@
                    "Scientific": 0
                    },
     "uniques": [
-                "[+3 Culture] [in capital]",
-                "[-25]% Culture cost of natural border growth [in all cities]"
+                "[+10]% Great Person generation [in capital]",
+                "[+5]% Great Person generation [in all cities]"
                ],
     "policies": [
                 {
-                 "name": "Aristocracy",
+                 "name": "Organized Labor", //Great Engineer tree
                  "uniques": [
-                             "[+15]% Production when constructing [All] wonders [in all cities]",
-                             "[+1 Happiness] per [10] population [in all cities]"
+                             "Provides the cheapest [Production] building in your first [4] cities for free",
                             ],
                  "row": 1,
                  "column": 1
                  },
+                {
+                 "name": "",//Boosts Improvements next to Great Improvement 
+                 "uniques": [
+                             "[+1 Production] from every [Mine] <within [1] tiles of a [tileFilter]>"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "",//the same, but with a persentage 
+                 "uniques": [
+                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 3,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                            ],
+                 "row": 4,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts everything near a Great Improvement 
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                            ],
+                 "row": 2,
+                 "column": 2
+                 },
+                {
+                 "name": "",//15% faster Great Person 
+                 "uniques": [
+                             "[greatPerson] is earned [+15]% faster"
+                            ],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
+                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                            ],
+                 "row": 4,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Great Person faith cost reduced
+                 "uniques": [
+                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                            ],
+                 "row": 5,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                            ],
+                 "row": 6,
+                 "column": 1
+                 },
+                {
+                 "name": "Cultural Identity",//Great Artist tree
+                 "uniques": [
+                             "Provides the cheapest [Culture] building in your first [4] cities for free"
+                            ],
+                 "row": 1,
+                 "column": 3
+                 },
+              "name": "",//Boosts Improvements next to Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "",//the same, but with a persentage 
+                 "uniques": [
+                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 3,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                            ],
+                 "row": 4,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts everything near a Great Improvement 
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                            ],
+                 "row": 2,
+                 "column": 2
+                 },
+                {
+                 "name": "",//15% faster Great Person 
+                 "uniques": [
+                             "[greatPerson] is earned [+15]% faster"
+                            ],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
+                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                            ],
+                 "row": 4,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Great Person faith cost reduced
+                 "uniques": [
+                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                            ],
+                 "row": 5,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                            ],
+                 "row": 6,
+                 "column": 1
+                 },
+                {
+                 "name": "Wise Men",//Great Scientist tree
+                 "uniques": [
+                             "Provides the cheapest [Science] building in your first [4] cities for free"
+                            ],
+                 "row": 1,
+                 "column": 5
+                 },
+              "name": "",//Boosts Improvements next to Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "",//the same, but with a persentage 
+                 "uniques": [
+                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 3,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                            ],
+                 "row": 4,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts everything near a Great Improvement 
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                            ],
+                 "row": 2,
+                 "column": 2
+                 },
+                {
+                 "name": "",//15% faster Great Person 
+                 "uniques": [
+                             "[greatPerson] is earned [+15]% faster"
+                            ],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
+                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                            ],
+                 "row": 4,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Great Person faith cost reduced
+                 "uniques": [
+                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                            ],
+                 "row": 5,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                            ],
+                 "row": 6,
+                 "column": 1
+                 },
+                {
+                 "name": "Bartering",//Great Merchant tree
+                 "uniques": [
+                             "Provides the cheapest [Gold] building in your first [4] cities for free"
+                            ],
+                 "row": 1,
+                 "column": 7
+                 },
+              "name": "",//Boosts Improvements next to Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "",//the same, but with a persentage 
+                 "uniques": [
+                             "[relativeAmount]% [stat] from every [tileFilter/buildingFilter] <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 3,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts Great Improvement 
+                 "uniques": [
+                             "[stats] from every [tileFilter/specialist/buildingFilter]"
+                            ],
+                 "row": 4,
+                 "column": 1
+                 },
+                {
+                 "name": "",//boosts everything near a Great Improvement 
+                 "uniques": [
+                             ""
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "",//25% chance of getting a Great Person during a Golden Age
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [+25]% chance> <during a Golden Age>"
+                            ],
+                 "row": 2,
+                 "column": 2
+                 },
+                {
+                 "name": "",//15% faster Great Person 
+                 "uniques": [
+                             "[greatPerson] is earned [+15]% faster"
+                            ],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "",//can buy a Great Person for a flat 1000 Faith until the Industrial era; +15% speed after that 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] <before the [Industrial Era]>",
+                             "[greatPerson] is earned [+15]% faster <starting from the [Industrial Era]>"
+                            ],
+                 "row": 4,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Great Person faith cost reduced
+                 "uniques": [
+                             "[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%"
+                            ],
+                 "row": 5,
+                 "column": 2
+                 },
+                {
+                 "name": "",//Buy a Great Person for faith (after the industrial era), 50 [resourse] when you expend one 
+                 "uniques": [
+                             "May buy [baseUnitFilter] units for [1000] [Faith] [cityFilter] at an increasing price ([500]) <starting from the [Industrial Era]>",
+                             "[+50 ] whenever a Great Person is expended <for [1] turns>"
+                            ],
+                 "row": 6,
+                 "column": 1
+                 },
+                {
+                 "name": "Training",//Great General tree
+                 "uniques": [
+                             "Provides a [Barracks] in your first [4] cities for free"
+                            ],
+                 "row": 1,
+                 "column": 9
+                 },
+//This one is a little different from the other 4 on account of how Citadels work and just the general "feel"
                  ]
    },
 
