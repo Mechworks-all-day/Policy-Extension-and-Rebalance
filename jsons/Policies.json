@@ -52,7 +52,7 @@
                  "name": "Grand Palace",
                  "uniques": [
                              "[+1 Culture, +1 Gold] from every [Wonder]",
-                             "[+15]% Production when constructing [All] wonders [in capital]
+                             "[+15]% Production when constructing [All] wonders [in capital]"
                             ],
                  "requires": ["Homeland"],
                  "row": 3,
@@ -173,7 +173,7 @@
                              "[-25]% Gold cost of acquiring tiles [in all cities]",
                              "[-25]% Gold cost of acquiring tiles [in all cities] <on foreign continents>",
                              "[-10]% tile improvement construction time",
-                             "[-10]% tile improvement construction time <on foreign continents>'
+                             "[-10]% tile improvement construction time <on foreign continents>"
                             ],
                  "requires": ["Manifest Destiny"],
                  "row": 1,
@@ -443,7 +443,7 @@
                  "name": "Generational Training",
                  "uniques": [
                              "New [{Ranged} {Land}] units start with [+5] Experience [in all cities]",
-                             [Gold] cost of purchasing [{Ranged} {Land}] units [-15]%"
+                             "[Gold] cost of purchasing [{Ranged} {Land}] units [-15]%"
                             ],
                  "requires": ["Ranged Combat"]
                  "row": 7,
@@ -590,18 +590,287 @@
                    "Scientific": 0
                    },
     "uniques": [
-                "[+3 Culture] [in capital]",
-                "[-25]% Culture cost of natural border growth [in all cities]"
+                "[-25]% City-State Influence degradation"
+                "When declaring friendship, both parties gain a [+10]% boost to great person generation"
                ],
     "policies": [
                 {
-                 "name": "Aristocracy",
+                 "name": "Patronage",
                  "uniques": [
-                             "[+15]% Production when constructing [All] wonders [in all cities]",
-                             "[+1 Happiness] per [10] population [in all cities]"
+                             "City-State Influence recovers at twice the normal rate",
+                            ],
+                 "row": 1,
+                 "column": 4
+                 },
+                {
+                 "name": "Basic Trade Agreement",
+                 "uniques": [
+                             "Allied City-States provide [Gold] equal to [+10]% of what they produce for themselves"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "Luxury Traders",
+                 "uniques": [
+                             "Retain [+33]% of the happiness from a luxury after the last copy has been traded away",
+                             "[+15]% Happiness from luxury resources gifted by City-States"
+                            ],
+                 "row": 3,
+                 "column": 1
+                 },
+                {
+                 "name": "Free Trade",
+                 "uniques": [
+                             "[+10]% Gold from Great Merchant trade missions",
+                             "Allied City-States provide [Gold] equal to [+20]% of what they produce for themselves"
+                            ],
+                 "row": 4,
+                 "column": 1
+                 },
+                {
+                 "name": "Shared Economy",
+                 "uniques": [
+                             "Allied City-States provide [Gold] equal to [+20]% of what they produce for themselves"
+                            ],
+                 "row": 5,
+                 "column": 1
+                 },
+                {
+                 "name": "Simple Research Collaboration",
+                 "uniques": [
+                             "Allied City-States provide [Science] equal to [+10]% of what they produce for themselves"
+                            ],
+                 "row": 2,
+                 "column": 2
+                 },
+                {
+                 "name": "Scientific Exchange",
+                 "uniques": [
+                             "Allied City-States provide [Science] equal to [+15]% of what they produce for themselves",
+                             "Science gained from research agreements [+15]%"
+                            ],
+                 "row": 3,
+                 "column": 2
+                 },
+                {
+                 "name": "Free Exchange of Information",
+                 "uniques": [
+                             "[+20]% [Science] from City-States",
+                             "Science gained from research agreements [+15]%"
+                            ],
+                 "row": 4,
+                 "column": 2
+                 },
+                {
+                 "name": "Collaborative Effort",
+                 "uniques": [
+                             "Science gained from research agreements [+15]%",
+                             "Allied City-States provide [Science] equal to [+15]% of what they produce for themselves",
+                            ],
+                 "row": 5,
+                 "column": 2
+                 },
+                {
+                 "name": "Unified Academia",
+                 "uniques": [
+                             "Science gained from research agreements [+15]%",
+                             "Allied City-States provide [Science] equal to [+60]% of what they produce for themselves",
+                            ],
+                 "row": 6,
+                 "column": 2
+                 },
+                {
+                 "name": "Inter-Faith Dialogue",
+                 "uniques": [
+                             "Allied City-States provide [Faith] equal to [+15]% of what they produce for themselves"
+                            ],
+                 "row": 2,
+                 "column": 3
+                 },
+                {
+                 "name": "Tolerance",
+                 "uniques": [
+                             "Allied City-States provide [Faith] equal to [+15]% of what they produce for themselves"
+                            ],
+                 "row": 3,
+                 "column": 3
+                 },
+                {
+                 "name": "Religious Freedom",
+                 "uniques": [
+                             "[+33]% [Faith] from City-States",
+                            ],
+                 "row": 4,
+                 "column": 3
+                 },
+                {
+                 "name": "Cultural Tolerance",
+                 "uniques": [
+                             "Allied City-States provide [Culture] equal to [+10]% of what they produce for themselves"
+                            ],
+                 "row": 2,
+                 "column": 5
+                 },
+                {
+                 "name": "Cultural Exchange",
+                 "uniques": [
+                             "Allied City-States provide [Culture] equal to [+15]% of what they produce for themselves"
+                            ],
+                 "row": 3,
+                 "column": 5
+                 },
+                {
+                 "name": "Cultural Fascination",
+                 "uniques": [
+                             "Allied City-States provide [Culture] equal to [+20]% of what they produce for themselves"
+                            ],
+                 "row": 4,
+                 "column": 5
+                 },
+                {
+                 "name": "Cultural Celebration",
+                 "uniques": [
+                             "[+100]% [Culture] from City-States",
+                            ],
+                 "row": 5,
+                 "column": 5
+                 },
+                {
+                 "name": "Traveling Entertainment",
+                 "uniques": [
+                             "Allied City-States provide [Happiness] equal to [+10]% of what they produce for themselves"
+                            ],
+                 "row": 2,
+                 "column": 6
+                 },
+                {
+                 "name": "Shared Holidays",
+                 "uniques": [
+                             "[+33]% [Happiness] from City-States",
+                            ],
+                 "row": 3,
+                 "column": 6
+                 },
+                {
+                 "name": "Grand Celebrations",
+                 "uniques": [
+                             "Allied City-States provide [Happiness] equal to [+30]% of what they produce for themselves"
+                            ],
+                 "row": 4,
+                 "column": 6
+                 },
+                {
+                 "name": "Defense Pact",
+                 "uniques": [
+                             "Militaristic City-States grant units [+1] times as fast when you are at war with a common nation",
+                             "Gain [+15] Influence with a [Military] gift to a City-State"
+                            ],
+                 "row": 2,
+                 "column": 7
+                 },
+                {
+                 "name": "Basic Training",
+                 "uniques": [
+                             "Military Units gifted from City-States start with [+10] XP"
+                            ],
+                 "row": 3,
+                 "column": 7
+                 },
+                {
+                 "name": "Joint Excercise",
+                 "uniques": [
+                             "Militaristic City-States grant units [+1] times as fast when you are at war with a common nation",
+                             "Gain [+5] Influence with a [Military] gift to a City-State"
+                            ],
+                 "row": 4,
+                 "column": 7
+                 },
+                {
+                 "name": "Veteran Exchange",
+                 "uniques": [
+                             "Military Units gifted from City-States start with [+20] XP"
+                            ],
+                 "row": 5,
+                 "column": 7
+                 },
+                {
+                 "name": "Elite Secondment",
+                 "uniques": [
+                             "Military Units gifted from City-States start with [+30] XP"
+                            ],
+                 "row": 6,
+                 "column": 7
+                 },
+                {
+                 "name": "Influence",
+                 "uniques": [
+                             "Resting point for Influence with City-States is increased by [+10]"
+                            ],
+                 "row": 1,
+                 "column": 9
+                 },
+                {
+                 "name": "Bribery",
+                 "uniques": [
+                             "Gifts of Gold to City-States generate [+25]% more Influence"
                             ],
                  "row": 1,
                  "column": 1
+                 },
+                {
+                 "name": "Open Borders",
+                 "uniques": [
+                             "City-State territory always counts as friendly territory"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "Educated Elite",
+                 "uniques": [
+                             "Allied City-States will occasionally gift Great People"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "Long Memory",
+                 "uniques": [
+                             "Influence of all other civilizations with all city-states degrades [+10]% faster",
+                             "Resting point for Influence with City-States is increased by [+10]"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "Historical Allies",
+                 "uniques": [
+                             "Resting point for Influence with City-States is increased by [+20]",
+                             "[+50]% resources gifted by City-States"
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "Annexation",
+                 "uniques": [
+                             "Can spend Gold to annex or puppet a City-State that has been your ally for [30] turns."
+                            ],
+                 "row": 1,
+                 "column": 1
+                 },
+                {
+                 "name": "Diplomacy Complete",
+                 "uniques": [
+                             "[+100]% resources gifted by City-States",
+                             "[-25]% City-State Influence degradation",
+                             "Influence of all other civilizations with all city-states degrades [+20]% faster",
+                             "Military Units gifted from City-States start with [+90] XP",
+                             "Retain [+17]% of the happiness from a luxury after the last copy has been traded away",
+                             "When declaring friendship, both parties gain a [+40]% boost to great person generation",
+                             "Science gained from research agreements [+40]%"
+                            ],
                  },
                  ]
    },
