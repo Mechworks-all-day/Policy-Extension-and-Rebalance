@@ -36,7 +36,7 @@
                              "Enemy [Civilian] units must spend [1] extra movement points when inside your territory"
                             ],
                  "row": 1,
-                 "column": 4
+                 "column": 6
                  },
                 {
                  "name": "Forbidden City",
@@ -55,7 +55,7 @@
                              "[+15]% Production when constructing [All] wonders [in capital]"
                             ],
                  "requires": ["Homeland"],
-                 "row": 3,
+                 "row": 2,
                  "column": 3
                  },
                 {
@@ -65,7 +65,7 @@
                              "Damage is ignored when determining unit Strength <when fighting in [Friendly Land] tiles>"
                             ],
                  "requires": ["Suspicion"],
-                 "row": 3,
+                 "row": 2,
                  "column": 5
                  },
                 {
@@ -76,8 +76,8 @@
                              "[+2 Food] from every specialist [in capital]"
                             ],
                  "requires": ["Forbidden City","Grand Palace"],
-                 "row": 5,
-                 "column": 3
+                 "row": 3,
+                 "column": 1
                  },
                 {
                  "name": "Sacred Clay",
@@ -87,7 +87,7 @@
                              "[+20]% Strength decreasing with distance from the capital"
                             ],
                  "requires": ["Suspicion"],
-                 "row": 5,
+                 "row": 2,
                  "column": 7
                  },
                 {
@@ -101,8 +101,8 @@
                             "[+25]% Golden Age length"
                             ],
                  "requires": ["True Civilization"],
-                 "row": 7,
-                 "column": 3
+                 "row": 4,
+                 "column": 1
                  },
                 {
                  "name": "The Hermit Kingdom",
@@ -114,7 +114,7 @@
                              "[+80]% XP gained from combat <in [Friendly Land] tiles>"
                             ],
                  "requires": ["Foreign Devils","Sacred Clay"],
-                 "row": 7,
+                 "row": 3,
                  "column": 6
                  },
                 {
@@ -242,13 +242,13 @@
                  "column": 5
                  },
                 {
-                 "name": "",//this is going to be doing a bunch of stuff for your military as you fill out the other bits of the tree
+                 "name": "The Grease of Empires",//this is going to be doing a bunch of stuff for your military as you fill out the other bits of the tree
                  "uniques": [
                              "[relativeAmount]% Strength for cities
                              "
                             ],
-                 "row": 8,
-                 "column": 2
+                 "row": 5,
+                 "column": 7
                  },
                  ]
   },
@@ -328,7 +328,7 @@
                              "When defeating a [Barbarian] unit, earn [+10] Gold and recruit it <with [+10]% chance>"
                             ],
                  "requires": ["Patrols"],
-                 "row": 3,
+                 "row": 2,
                  "column": 2
                  },
                 {
@@ -399,7 +399,7 @@
                              "[+2] Unit Supply per city"
                             ],
                  "requires": ["Professional Army"]
-                 "row": 4,
+                 "row": 5,
                  "column": 7
                  },
                 {
@@ -418,7 +418,7 @@
                              "[Gold] cost of purchasing [{Melee} {Land}] units [-15]%"
                             ],
                  "requires": ["Close Combat"]
-                 "row": 7,
+                 "row": 6,
                  "column": 1
                  },
                 {
@@ -427,7 +427,7 @@
                              "New [{Melee} {Land}] units start with [+10] Experience [in all cities]"
                             ],
                  "requires": ["Martial Arts"]
-                 "row": 9,
+                 "row": 7,
                  "column": 1
                  },
                 {
@@ -446,7 +446,7 @@
                              "[Gold] cost of purchasing [{Ranged} {Land}] units [-15]%"
                             ],
                  "requires": ["Ranged Combat"]
-                 "row": 7,
+                 "row": 6,
                  "column": 3
                  },
                 {
@@ -485,8 +485,8 @@
                              "Only available <after discovering [tech]>"
                             ],
                  "requires": ["Professional Navy"]
-                 "row": 8,
-                 "column": 4
+                 "row": 7,
+                 "column": 5
                  },
                 {
                  "name": "Air Power",
@@ -510,7 +510,7 @@
                              "[+50]% Strength <for [Ranged] units> <when attacking>",
                             ],
                  "requires": ["Professional Navy", "Professional Army","Air Power","Range Certification","Codified Combat System"]
-                 "row": 11,
+                 "row": 10,
                  "column": 4
                  },
                  {
@@ -888,7 +888,7 @@
                             ],
                  "requires": ["Historical Allies", "Elite Secondment", "Grand Celebrations","Cultural Celebration","Religious Freedom","Unified Academia","Shared Economy"]
                  "row": 7,
-                 "column": 9
+                 "column": 5
                  },
                 {
                  "name": "Diplomacy Complete",
@@ -1302,118 +1302,255 @@
                  "uniques": [
                              "Provides a [Barracks] in your first [4] cities for free"
                             ],
-                 "row": 1,
-                 "column": 9
+                 "row": 7,
+                 "column": 7
+                 },
+                {
+                 "name": "Milita",
+                 "uniques": [
+                             "[+5]% Strength for cities"
+                            ],
+                 "requires": ["Training"]
+                 "row": 7,
+                 "column": 6
+                 },
+                {
+                 "name": "Military Industry",
+                 "uniques": [
+                             "[+5]% Production when constructing [Military] units [in all cities] <in cities with a [Barracks]>",
+                             "[+5]% Production when constructing [Military] units [in all cities] <in cities with a [Armoury]>",
+                             "[+5]% Production when constructing [Military] units [in all cities] <in cities with a [Castle]>",
+                             "[+5]% Production when constructing [Military] units [in all cities] <in cities with a [Arsenal]>",
+                             "[+5]% Production when constructing [Military] units [in all cities] <in cities with a [Military Base]>"
+                            ],
+                 "requires": ["Training"]
+                 "row": 8,
+                 "column": 7
+                 },
+                {
+                 "name": "National Guard",
+                 "uniques"; [
+                             "[+5]% Strength for cities <in cities with at least [5] [Population]> <when defending>",
+                             "[+5]% Strength for cities <in cities with at least [10] [Population]> <when defending>",
+                             "[+5]% Strength for cities <in cities with at least [15] [Population]> <when defending>",
+                             "[+5]% Strength for cities <in cities with at least [20] [Population]> <when defending>",
+                             "[+10]% Strength for cities <in cities with at least [30] [Population]> <when defending>",
+                             "[+10]% Strength for cities <in cities with at least [40] [Population]> <when defending>",
+                             "[+10]% Strength for cities <in cities with at least [50] [Population]> <when defending>",
+                             "[+10]% Strength for cities <in cities with at least [60] [Population]> <when defending>"
+                            ],
+                 "requires": ["Milita"]
+                 "row": 7,
+                 "column": 6
                  },
 //This one is a little different from the other 4 on account of how Citadels work and just the general "feel"
-[relativeAmount]% Production when constructing [baseUnitFilter] units [cityFilter]
-
-[amount] units cost no maintenance
-[stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%
-May buy [baseUnitFilter] units for [amount] [stat] [cityFilter]
-May buy [baseUnitFilter] units for [amount] [stat] [cityFilter] at an increasing price ([amount])
-
-[relativeAmount]% Strength for cities
-New [baseUnitFilter] units start with [amount] Experience [cityFilter]
-All newly-trained [baseUnitFilter] units [cityFilter] receive the [promotion] promotion
-[amount] Unit Supply
-
-
-Damage is ignored when determining unit Strength
-
-[greatPerson] is earned [relativeAmount]% faster
-<within [amount] tiles of a [tileFilter]>
-<when attacking>
-<when defending>
-
-
-<for [amount] turns>
-<when at war>
-<in cities with a [buildingFilter]>
-
                 {
                  "name": "Fortification",
                  "uniques": [
-                             "[relativeAmount]% Strength <for [mapUnitFilter] units> <within [amount] tiles of a [tileFilter]> <when defending>"
+                             "[+15]% Strength <for [Military] units> <within [1] tiles of a [Fort]> <when defending>"
                             ],
-                 "row": 1,
-                 "column": 6
+                 "row": 8,
+                 "column": 1
                  },
                 {
                  "name": "Civil Defense",
                  "uniques": [
-                             "[relativeAmount]% City Strength from defensive buildings",
-                             "[relativeAmount]% Strength for cities <within [amount] tiles of a [tileFilter]>"
+                             "[+10]% City Strength from defensive buildings",
+                             "[+10]% Strength for cities <within [1] tiles of a [Fort]>"
                             ],
-                 "row": 3,
-                 "column": 7
+                 "requires": ["Fortification"]
+                 "row": 9,
+                 "column": 1
                  },
                 {
                  "name": "Support Branch",
                  "uniques": [
-                             "[amount] HP when healing <for [mapUnitFilter] units> <within [amount] tiles of a [tileFilter]>"
+                             "[+10] HP when healing <for [Military] units> <within [1] tiles of a [Fort]>"
                             ],
-                 "row": 2,
+                 "requires": ["Fortification"]
+                 "row": 8,
+                 "column": 3
+                 },
+                {
+                 "name": "Independent Forts",
+                 "uniques": [
+                             "[+1 Gold, +1 Production] from [Fort] tiles [in all cities]",
+                             "[+2 Gold, +2 Production] from [Citadel] tiles [in all cities]"
+                            ],
+                 "requires": ["Support Branch"]
+                 "row": 9,
+                 "column": 3
+                 },
+                {
+                 "name": "Star Forts",
+                 "uniques": [
+                             "[+15]% Strength <for [Military] units> <within [2] tiles of a [Fort]> <when defending>",
+                             "[+10]% Strength for cities <within [2] tiles of a [Fort]>"
+                            ],
+                 "requires": ["Independent Forts","Civil Defense"]
+                 "row": 9,
+                 "column": 4
+                 },
+                {
+                 "name": "Earthworks",
+                 "uniques": [
+                             "[+10]% Strength <for [Military] units> <within [3] tiles of a [Fort]> <when defending>",
+                             "[+10]% Strength for cities <within [3] tiles of a [Fort]>"
+                            ],
+                 "requires": ["Star Forts"]
+                 "row": 9,
                  "column": 5
+                 },
+                {
+                 "name": "Improved Citadels",
+                 "uniques": [
+                             "[+1 Culture, +1 Happiness] from [Citadel] tiles [in all cities] <after adopting [Military Caste]>",
+                             "Damage is ignored when determining unit Strength <for [Military] units> <within [1] tiles of a [Citadel]> <when defending>",
+                             "[+15]% Strength for cities <within [1] tiles of a [Citadel]>"
+                            ],
+                 "requires": ["Star Forts"]
+                 "row": 10,
+                 "column": 3
+                 },
+                {
+                 "name": "Bunker Networks",
+                 "uniques": [
+                             "Damage is ignored when determining unit Strength <for [Military] units> <within [2] tiles of a [Citadel]> <when defending>",
+                             "[+15]% Strength for cities <within [3] tiles of a [Citadel]>"
+                            ],
+                 "requires": ["Improved Citadels"]
+                 "row": 10,
+                 "column": 2
                  },
                 {
                  "name": "Boot Camp",
                  "uniques": [
-                             "[relativeAmount]% XP gained from combat <for [mapUnitFilter] units> <for [amount] turns> <when at war>"
+                             "[+100]% XP gained from combat <for [Military] units> <for [5] turns> <when at war>"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "row": 10,
+                 "column": 7
                  },
                 {
                  "name": "Military Reserves",
                  "uniques": [
-                             "New [baseUnitFilter] units start with [amount] Experience [cityFilter] <when at war>"
+                             "New [Military] units start with [+5] Experience [in all cities] <when at war>"
                             ],
-                 "row": 2,
-                 "column": 1
+                 "requires": ["Boot Camp"]
+                 "row": 11,
+                 "column": 7
                  },
                 {
                  "name": "JTROC Program",
                  "uniques": [
-                             "New [baseUnitFilter] units start with [amount] Experience [cityFilter] <in cities with a [buildingFilter]>"
+                             "New [Military] units start with [+5] Experience [in all cities] <in cities with a [Barracks]>"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Military Reserves"]
+                 "row": 12,
+                 "column": 6
+                 },
+                {
+                 "name": "Officer Academy",
+                 "uniques": [
+                             "May buy [Great General] units for [1000] [Faith] [in capital] <before the [Industrial Era]>",
+                             "New [Military] units start with [+5] Experience [in all cities]"
+                            ],
+                 "requires": ["JTROC Program", "Command School"]
+                 "row": 12,
+                 "column": 5
                  },
                 {
                  "name": "General's Quarters", //TAKE YOUR PUN-ISHMENT LIKE A MAN!
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [amount]% chance> <when at war>"
+                             "Free [Great General] appears <with [+20]% chance> <when at war>"
                             ],
-                 "row": 3,
-                 "column": 3
+                 "row": 11,
+                 "column": 1
                  },
                 {
                  "name": "Command School",
                  "uniques": [
-                             "[greatPerson] is earned [relativeAmount]% faster"
+                             "[Great General] is earned [+10]% faster"
                             ],
-                 "row": 4,
-                 "column": 3
+                 "requires": ["General's Quarters"]
+                 "row": 12,
+                 "column": 2
                  },
                 {
                  "name": "One Star Generals",
                  "uniques": [
-                             "Free [baseUnitFilter] appears <with [amount]% chance> <during a Golden Age>",
-                             "[relativeAmount]% Strength <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>",
-                             "[relativeAmount]% XP gained from combat  <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>",
-                             "[amount] HP when healing <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>"
+                             "Free [Great General] appears <with [+10]% chance> <during a Golden Age>",
+                             "[+10]% Strength <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+10]% XP gained from combat  <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+5] HP when healing <for [Military] units> <when adjacent to a [Great General] unit>"
                             ],
-                 "row": 5,
+                 "requires": ["Command School"]
+                 "row": 13,
+                 "column": 2
+                 },
+                {
+                 "name": "Two Star Generals",
+                 "uniques": [
+                             "Free [Great General] appears <with [+10]% chance> <during a Golden Age>",
+                             "[+10]% Strength <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+10]% XP gained from combat  <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+5] HP when healing <for [Military] units> <when adjacent to a [Great General] unit>"
+                            ],
+                 "requires": ["One Star Generals"]
+                 "row": 13,
                  "column": 3
                  },
                 {
-                 "name": "",
+                 "name": "Three Star Generals",
                  "uniques": [
-                             ""
+                             "Free [Great General] appears <with [+15]% chance> <during a Golden Age>",
+                             "[+15]% Strength <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+15]% XP gained from combat  <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+8] HP when healing <for [Military] units> <when adjacent to a [Great General] unit>"
                             ],
-                 "row": 1,
-                 "column": 1
+                 "requires": ["Two Star Generals", "Officer Academy"]
+                 "row": 13,
+                 "column": 4
+                 },
+                {
+                 "name": "Four Star Generals",
+                 "uniques": [
+                             "Free [Great General] appears <with [+15]% chance> <during a Golden Age>",
+                             "[+15]% Strength <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+15]% XP gained from combat  <for [Military] units> <when adjacent to a [Great General] unit>",
+                             "[+8] HP when healing <for [Military] units> <when adjacent to a [Great General] unit>"
+                            ],
+                 "requires": ["Three Star Generals"]
+                 "row": 13,
+                 "column": 5
+                 },
+                {
+                 "name": "General Staff",
+                 "uniques": [
+                             "[Faith] cost of purchasing [Great General] units [-10]%",
+                             "[Great General] is earned [+10]% faster"
+                            ],
+                 "requires": ["Two Star Generals"]
+                 "row": 14,
+                 "column": 3
+                 },
+                {
+                 "name": "Officer Corps",
+                 "uniques": [
+                             "[Faith] cost of purchasing [Great General] units [-15]%",
+                             "[Great General] is earned [+5]% faster"
+                            ],
+                 "requires": ["General Staff"]
+                 "row": 14,
+                 "column": 4
+                 },
+                {
+                 "name": "Department of War",
+                 "uniques": [
+                             "May buy [Great General] units for [1000] [Faith] [in all cities] at an increasing price ([500])"
+                            ],
+                 "requires": ["Four Star Generals", "Officer Corps"]
+                 "row": 14,
+                 "column": 6
                  },
                  ]
    },
