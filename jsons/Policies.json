@@ -906,8 +906,6 @@
    },
   {
 //This one is kinda special in that it has to do with Great People specificly, culminating with being able to buy them.
-
-<in [tileFilter] tiles>
     "name": "Greatness",
     "era": "Ancient era",
     "priorities": {
@@ -1029,7 +1027,8 @@
                  "row": 1,
                  "column": 3
                  },
-              "name": "Luxury Goods",//Boosts Improvements next to Great Improvement 
+                 {
+                 "name": "Luxury Goods",//Boosts Improvements next to Great Improvement 
                  "uniques": [
                              "[+1 Culture] from every [Luxury resource] <within [3] tiles of a [Landmark]>"
                             ],
@@ -1120,7 +1119,8 @@
                  "row": 1,
                  "column": 5
                  },
-              "name": "Journeyman Sages",//Boosts Improvements next to Great Improvement 
+                {
+                 "name": "Journeyman Sages",//Boosts Improvements next to Great Improvement 
                  "uniques": [
                              "[+1 Science] from every [Strategic resource] <within [3] tiles of a [Academy]>",
                              "[+1 Science] from every [Bonus resource] <within [3] tiles of a [Academy]>",
@@ -1214,7 +1214,8 @@
                  "row": 1,
                  "column": 7
                  },
-              "name": "Apprentice Traders",//Boosts Improvements next to Great Improvement 
+                {
+                 "name": "Apprentice Traders",//Boosts Improvements next to Great Improvement 
                  "uniques": [
                              "[+1 Gold] from every [Trading post] <within [2] tiles of a [Customs house]>"
                             ],
@@ -1306,45 +1307,105 @@
                  },
 //This one is a little different from the other 4 on account of how Citadels work and just the general "feel"
 [relativeAmount]% Production when constructing [baseUnitFilter] units [cityFilter]
-Free [baseUnitFilter] appears
+
 [amount] units cost no maintenance
 [stat] cost of purchasing [baseUnitFilter] units [relativeAmount]%
 May buy [baseUnitFilter] units for [amount] [stat] [cityFilter]
 May buy [baseUnitFilter] units for [amount] [stat] [cityFilter] at an increasing price ([amount])
-[relativeAmount]% City Strength from defensive buildings
+
 [relativeAmount]% Strength for cities
 New [baseUnitFilter] units start with [amount] Experience [cityFilter]
 All newly-trained [baseUnitFilter] units [cityFilter] receive the [promotion] promotion
 [amount] Unit Supply
-[relativeAmount]% Strength
-[amount] HP when healing
+
+
 Damage is ignored when determining unit Strength
-[relativeAmount]% XP gained from combat
+
 [greatPerson] is earned [relativeAmount]% faster
 <within [amount] tiles of a [tileFilter]>
 <when attacking>
 <when defending>
-<for [mapUnitFilter] units>
-<with [amount]% chance>
+
+
 <for [amount] turns>
 <when at war>
 <in cities with a [buildingFilter]>
-<when adjacent to a [mapUnitFilter] unit>
+
                 {
-                 "name": "",
+                 "name": "Fortification",
                  "uniques": [
-                             ""
+                             "[relativeAmount]% Strength <for [mapUnitFilter] units> <within [amount] tiles of a [tileFilter]> <when defending>"
+                            ],
+                 "row": 1,
+                 "column": 6
+                 },
+                {
+                 "name": "Civil Defense",
+                 "uniques": [
+                             "[relativeAmount]% City Strength from defensive buildings",
+                             "[relativeAmount]% Strength for cities <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 3,
+                 "column": 7
+                 },
+                {
+                 "name": "Support Branch",
+                 "uniques": [
+                             "[amount] HP when healing <for [mapUnitFilter] units> <within [amount] tiles of a [tileFilter]>"
+                            ],
+                 "row": 2,
+                 "column": 5
+                 },
+                {
+                 "name": "Boot Camp",
+                 "uniques": [
+                             "[relativeAmount]% XP gained from combat <for [mapUnitFilter] units> <for [amount] turns> <when at war>"
                             ],
                  "row": 1,
                  "column": 1
                  },
                 {
-                 "name": "",
+                 "name": "Military Reserves",
                  "uniques": [
-                             ""
+                             "New [baseUnitFilter] units start with [amount] Experience [cityFilter] <when at war>"
+                            ],
+                 "row": 2,
+                 "column": 1
+                 },
+                {
+                 "name": "JTROC Program",
+                 "uniques": [
+                             "New [baseUnitFilter] units start with [amount] Experience [cityFilter] <in cities with a [buildingFilter]>"
                             ],
                  "row": 1,
                  "column": 1
+                 },
+                {
+                 "name": "General's Quarters", //TAKE YOUR PUN-ISHMENT LIKE A MAN!
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [amount]% chance> <when at war>"
+                            ],
+                 "row": 3,
+                 "column": 3
+                 },
+                {
+                 "name": "Command School",
+                 "uniques": [
+                             "[greatPerson] is earned [relativeAmount]% faster"
+                            ],
+                 "row": 4,
+                 "column": 3
+                 },
+                {
+                 "name": "One Star Generals",
+                 "uniques": [
+                             "Free [baseUnitFilter] appears <with [amount]% chance> <during a Golden Age>",
+                             "[relativeAmount]% Strength <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>",
+                             "[relativeAmount]% XP gained from combat  <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>",
+                             "[amount] HP when healing <for [mapUnitFilter] units> <when adjacent to a [mapUnitFilter] unit>"
+                            ],
+                 "row": 5,
+                 "column": 3
                  },
                 {
                  "name": "",
